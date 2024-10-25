@@ -1,6 +1,7 @@
 number = 0
 a = int(input())
 while a != 0:
-  number += a
+  number += a % 10
+  a //= 10
   a = int(input())
 print(number)
